@@ -1,20 +1,32 @@
 /********************
 YOUR STYLES
 *******************/
-.temp {
-  color: red;
+body {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    margin: 0 auto;
+    width: 60%;
 }
 
-.city {
-  color: green;
+.sunny {
+background: #F09819; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #F09819 , #EDDE5D); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #F09819 , #EDDE5D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */     
 }
 
-.state {
-  color: blue;
+.cloudy {
+background: #403B4A; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #403B4A , #E7E9BB); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #403B4A , #E7E9BB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.image img {
-  outline: 5px solid red;
+.rainy {
+background: #314755; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #314755 , #26a0da); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #314755 , #26a0da); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 
