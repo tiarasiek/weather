@@ -11,6 +11,20 @@ body {
     width: 60%;
 }
 
+.city {
+font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.day {
+    margin: 0;
+}
+
+h1 {
+    font-size: 7em;
+    margin-top: 25px;
+}
+
 .sunny {
 background: #F09819; /* fallback for old browsers */
 background: -webkit-linear-gradient(to left, #F09819 , #EDDE5D); /* Chrome 10-25, Safari 5.1-6 */

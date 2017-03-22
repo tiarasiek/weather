@@ -1,10 +1,12 @@
 // YOUR SCRIPTS GO HERE
 
+
+
 // Get Geo Location
 // Check for GeoLocation Support on Browser
 if ('geolocation' in navigator) {
 
-   $('.geo').show(); 
+   $('.geo').show();
 
 } else {
   
@@ -43,27 +45,33 @@ var getWeather = function(location) {
       console.log(weather);
       
       // Display Data
-      $('.temp').text(weather.temp);
       $('.city').text(weather.city);
-      $('img').attr('src', weather.image);
-
-              console.log(weather.code);
+        $('.day').text(weather.forecast[0].day + ', ' + weather.forecast[0].date);
+        $('.temp').text(weather.temp);
+        
+        console.log(weather.code);
       
-      if ( weather.code >= 23 && weather.code <= 29 ) {
-         $('body').addClass('cloudy');   
+      // If Sunny `code` between 31 and 36       
+      if (weather.code >= 31 && weather.code <= 36 ) {
+        
+        $('body').addClass('sunny');
+        
       }
       
-      
-      if ( weather.code >= 30 && weather.code <= 36 ) {
-         $('body').addClass('sunny');   
+       // If Cloudy `code` between 31 and 36       
+      if (weather.code >= 26 && weather.code <= 30 ) {
+        
+        $('body').addClass('cloudy');
+        
       }
-          
-    if (weather.code >= 5 && weather.code <= 14 ) {
+      
+      // If Rainy `code` between 31 and 36       
+      if (weather.code >= 5 && weather.code <= 14 ) {
         
         $('body').addClass('rainy');
         
-      } 
-
+      }
+        
     },
     error: function(error) {
       // Show if weather cannot be retreived
