@@ -51,6 +51,41 @@ var getWeather = function(location) {
         
         console.log(weather.code);
       
+    // If severe thunderstorms     
+      if (weather.code >= 0 && weather.code <= 4 ) {
+        
+        $('body').addClass('storms');
+        
+      }
+        
+    // If Rainy     
+      if (weather.code >= 5 && weather.code <= 12 ) {
+        
+        $('body').addClass('rainy');
+        
+      }
+        
+    // If Snowy     
+      if (weather.code >= 13 && weather.code <= 18 ) {
+        
+        $('body').addClass('snowy');
+        
+      }
+        
+    // If Windy/Foggy     
+      if (weather.code >= 19 && weather.code <= 25 ) {
+        
+        $('body').addClass('windy');
+        
+      }
+        
+    // If Cloudy     
+      if (weather.code >= 26 && weather.code <= 30 ) {
+        
+        $('body').addClass('cloudy');
+        
+      }
+
       // If Sunny     
       if (weather.code >= 31 && weather.code <= 36 ) {
         
@@ -58,19 +93,6 @@ var getWeather = function(location) {
         
       }
       
-       // If Cloudy     
-      if (weather.code >= 26 && weather.code <= 30 ) {
-        
-        $('body').addClass('cloudy');
-        
-      }
-      
-      // If Rainy     
-      if (weather.code >= 5 && weather.code <= 12 ) {
-        
-        $('body').addClass('rainy');
-        
-      }
         
     },
     error: function(error) {
