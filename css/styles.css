@@ -11,13 +11,32 @@ body {
     width: 60%;
 }
 
+figure {
+    background: rgba(255,255,255,.85);
+    width: 100%;
+}
+
 .city {
-font-size: 2em;
+    font-size: 2em;
     margin-bottom: 15px;
+    text-align: center;
 }
 
 .day {
     margin: 0;
+    text-align: center;
+}
+
+.temp,
+h1 {
+    text-align: center;
+}
+
+#button {
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+    padding: 1em;
 }
 
 h1 {
@@ -38,9 +57,7 @@ background: linear-gradient(to left, #403B4A , #E7E9BB); /* W3C, IE 10+/ Edge, F
 }
 
 .rainy {
-background: #314755; /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #314755 , #26a0da); /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #314755 , #26a0da); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: url(../img/rain.png);
 }
 
 
