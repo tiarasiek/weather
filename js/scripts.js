@@ -51,22 +51,22 @@ var getWeather = function(location) {
         
         console.log(weather.code);
       
-      // If Sunny `code` between 31 and 36       
+      // If Sunny     
       if (weather.code >= 31 && weather.code <= 36 ) {
         
         $('body').addClass('sunny');
         
       }
       
-       // If Cloudy `code` between 31 and 36       
+       // If Cloudy     
       if (weather.code >= 26 && weather.code <= 30 ) {
         
         $('body').addClass('cloudy');
         
       }
       
-      // If Rainy `code` between 31 and 36       
-      if (weather.code >= 5 && weather.code <= 14 ) {
+      // If Rainy     
+      if (weather.code >= 5 && weather.code <= 12 ) {
         
         $('body').addClass('rainy');
         
