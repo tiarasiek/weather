@@ -42,6 +42,29 @@ h1 {
     padding: 1em;
 }
 
+/*Button styling based on https://codepen.io/MSACODE/pen/uncli*/
+.geo {
+  margin: 0 auto;
+  font-size: 1.5em;
+  padding: .7em;
+  display: block;
+  background-color: #939598;
+  color: #ffffff;
+  font-weight: 300;
+  transition: all .5s ease-in-out;
+}
+
+.geo:hover {
+  background-color: #ffffff;
+  color: #939598;
+  border-color: #939598;
+}
+
+.geo:active {
+    background-color: #D1D2D4;
+    color: #ffffff;
+}
+
 h1 {
     font-size: 7em;
     margin-top: 25px;
@@ -80,9 +103,6 @@ MEDIA QUERIES
 @media screen and (min-width: 20em) { 
 
   /* Diagnostic Styling. Delete When Done. */
-  body:before {
-       background: yellow;
-       content: "Mobile Size";
   }
   
 }
@@ -91,10 +111,6 @@ MEDIA QUERIES
 @media screen and (min-width: 48em)  {
 
   /* Diagnostic Styling. Delete When Done. */
-  body:before {
-       background: yellow;
-       content: "Tablet Size";
-  }
 
 }
 
@@ -102,9 +118,5 @@ MEDIA QUERIES
 @media screen and (min-width: 80em) { 
   
   /* Diagnostic Styling. Delete When Done. */
-  body:before {
-       background: yellow;
-       content: "Desktop Size";
-  }
 
 }
