@@ -1,6 +1,7 @@
 /********************
 YOUR STYLES
 *******************/
+
 body {
     display: flex;
     flex-flow: column wrap;
@@ -29,6 +30,8 @@ figure {
 
 .temp,
 h1 {
+    margin: 0;
+    padding: 0;
     text-align: center;
 }
 
@@ -44,23 +47,31 @@ h1 {
     margin-top: 25px;
 }
 
-.sunny {
-background: #F09819; /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #F09819 , #EDDE5D); /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #F09819 , #EDDE5D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */     
-}
+/*Condition code backgrounds*/
 
-.cloudy {
-background: #403B4A; /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #403B4A , #E7E9BB); /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #403B4A , #E7E9BB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.stormy {
+background: url(../img/stormy.png);    
 }
 
 .rainy {
-background: url(../img/rain.png);
+background: url(../img/rainy.png);
 }
 
+.snowy {
+background: url(../img/snowy.png);
+}
 
+.windy {
+    background: url(../img/windy.png);
+}
+
+.cloudy {
+    background: url(../img/cloudy.png);
+}
+
+.sunny {
+    background: url(../img/sunny.png);
+}
 
 /********************
 MEDIA QUERIES

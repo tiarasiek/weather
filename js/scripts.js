@@ -1,7 +1,5 @@
 // YOUR SCRIPTS GO HERE
 
-
-
 // Get Geo Location
 // Check for GeoLocation Support on Browser
 if ('geolocation' in navigator) {
@@ -54,7 +52,7 @@ var getWeather = function(location) {
     // If severe thunderstorms     
       if (weather.code >= 0 && weather.code <= 4 ) {
         
-        $('body').addClass('storms');
+        $('body').addClass('stormy');
         
       }
         
